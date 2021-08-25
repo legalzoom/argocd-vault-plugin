@@ -18,5 +18,5 @@ Now open a new terminal window and run the following commands:
 # Open a new terminal window and export Vault dev server http address
 $ export VAULT_ADDR='http://127.0.0.1:8200'
 
-# Enable the Mock plugin
+# Enable the ArgoCD plugin
 $ make enable
