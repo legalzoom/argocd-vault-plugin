@@ -1,4 +1,4 @@
-FROM golang:1.16
+FROM golang:1.16 as builder
 
 WORKDIR /workspace
 
@@ -12,4 +12,7 @@ COPY path_config.go path_config.go
 COPY secret_token.go secret_token.go
 
 RUN CGO_ENABLED=0 go build -o vault/plugins/argocd cmd/argocd-vault-plugin/main.go
-COPY vault/plugins/argocd /vault-plugin
+
+FROM alpine
+COPY --from=builder /workspace/vault/plugins/argocd /vault-plugin 
+
