@@ -1,7 +1,7 @@
 # Vault ArgoCD Secret Plugin
 
-Vault ArgoCD Secret plugin is a secrets engine plugin for [HashiCorp Vault](https://www.vaultproject.io/).
-
+Vault ArgoCD Secret plugin is a secrets engine plugin for [HashiCorp Vault](https://www.vaultproject.io/) that allows for the generation and usage
+of short-term credentials for ArgoCD.
 
 ## Usage
 This plugin requires a few setup steps before it will work.
