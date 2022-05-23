@@ -3,16 +3,14 @@ module github.com/backjo/argocd-vault-plugin
 go 1.16
 
 require (
-	github.com/argoproj/argo-cd/v2 v2.1.0
-	github.com/docker/distribution v2.7.1+incompatible // indirect
-	github.com/google/gops v0.3.19 // indirect
+	github.com/argoproj/argo-cd/v2 v2.1.15
+	github.com/docker/distribution v2.7.1+incompatible
 	github.com/hashicorp/go-hclog v0.12.0
 	github.com/hashicorp/vault/api v1.1.0
 	github.com/hashicorp/vault/sdk v0.1.14-0.20200519221838-e0cfd64bc267
 	github.com/hashicorp/yamux v0.0.0-20181012175058-2f1d1f20f75d // indirect
-	github.com/kardianos/osext v0.0.0-20170510131534-ae77be60afb1 // indirect
-	github.com/shirou/gopsutil v0.0.0-20180427012116-c95755e4bcd7 // indirect
-	github.com/shirou/w32 v0.0.0-20160930032740-bb4de0191aa4 // indirect
+	github.com/xlab/treeprint v1.1.0 // indirect
+	golang.org/x/sys v0.0.0-20210630005230-0f9fa26af87c // indirect
 )
 
 replace (
