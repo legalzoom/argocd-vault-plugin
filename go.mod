@@ -3,7 +3,7 @@ module github.com/backjo/argocd-vault-plugin
 go 1.19
 
 require (
-	github.com/argoproj/argo-cd/v2 v2.1.0
+	github.com/argoproj/argo-cd/v2 v2.1.16
 	github.com/docker/distribution v2.7.1+incompatible
 	github.com/hashicorp/go-hclog v0.16.2
 	github.com/hashicorp/vault/api v1.8.2
@@ -16,8 +16,8 @@ require (
 	github.com/Masterminds/semver v1.5.0 // indirect
 	github.com/PuerkitoBio/purell v1.1.1 // indirect
 	github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578 // indirect
-	github.com/argoproj/gitops-engine v0.4.0 // indirect
-	github.com/argoproj/pkg v0.9.1 // indirect
+	github.com/argoproj/gitops-engine v0.4.3 // indirect
+	github.com/argoproj/pkg v0.11.1-0.20211203175135-36c59d8fafe0 // indirect
 	github.com/armon/go-metrics v0.3.9 // indirect
 	github.com/armon/go-radix v1.0.0 // indirect
 	github.com/bombsimon/logrusr v1.0.0 // indirect
