@@ -19,8 +19,8 @@ import (
 // backend wraps the backend framework and adds a map for storing key value pairs
 type backend struct {
 	*framework.Backend
-	configMutex   sync.RWMutex
-	store         map[string][]byte
+	configMutex sync.RWMutex
+	store       map[string][]byte
 }
 
 type AdminConfig struct {
