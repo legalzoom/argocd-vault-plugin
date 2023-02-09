@@ -15,13 +15,13 @@ func main() {
 	flags.Parse(os.Args[1:])
 
 	tlsConfig := apiClientMeta.GetTLSConfig()
-	logger.Info("plugin bootstrapcaPath={}, caCert={}", tlsConfig.CAPath, tlsConfig.CACert)
 	tlsProviderFunc := api.VaultPluginTLSProvider(tlsConfig)
 
 	err := plugin.Serve(&plugin.ServeOpts{
 		BackendFactoryFunc: argoPlugin.Factory,
 		TLSProviderFunc:    tlsProviderFunc,
 	})
+	logger.Info("plugin bootstrap caPath={}, caCert={}", tlsConfig.CAPath, tlsConfig.CACert)
 	if err != nil {
 		logger.Error("plugin shutting down", "error", err)
 		os.Exit(1)
