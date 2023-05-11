@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/argoproj/argo-cd/v2 v2.1.0
-	github.com/docker/distribution v2.7.1+incompatible
+	github.com/docker/distribution v2.8.2+incompatible
 	github.com/hashicorp/go-hclog v0.16.2
 	github.com/hashicorp/vault/api v1.8.2
 	github.com/hashicorp/vault/sdk v0.6.2
